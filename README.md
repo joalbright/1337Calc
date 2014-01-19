@@ -37,7 +37,7 @@ Specifications I wanted to follow :
 - design that will be dynamic for future ability to customize
 - discover and use original font
 
-My biggest design challenge was the font*(s)*. Yes, that is plural. Apple uses the Helvetica Neue family for most of there thin [fonts in iOS 7](http://iosfonts.com/). But the funny thing is the decimal point in [Helvetica Neue](http://www.myfonts.com/fonts/linotype/neue-helvetica/) is a line, not a circle. So I went about finding a good decimal and I ended up using [Avenir](http://www.myfonts.com/fonts/linotype/avenir/). The button was easy, the display was a little trickier. I setup a simple [NSMutableAttributedString](https://developer.apple.com/library/mac/documentation/cocoa/reference/foundation/classes/NSMutableAttributedString_Class/Reference/Reference.html) to solve the display issue.
+My biggest design challenge was the font(s). Yes, that is plural. Apple uses the Helvetica Neue family for most of there thin [fonts in iOS 7](http://iosfonts.com/). But the funny thing is the decimal point in [Helvetica Neue](http://www.myfonts.com/fonts/linotype/neue-helvetica/) is a line, not a circle. So I went about finding a good decimal and I ended up using [Avenir](http://www.myfonts.com/fonts/linotype/avenir/). The button was easy, the display was a little trickier. I setup a simple [NSMutableAttributedString](https://developer.apple.com/library/mac/documentation/cocoa/reference/foundation/classes/NSMutableAttributedString_Class/Reference/Reference.html) to solve the display issue.
 
 I wanted to have a nerdy throwback. So I based the icon on [1337](http://en.wikipedia.org/wiki/Leet). When you put 1337 in a calculator and turn it upside down it spells LEET *(aka Elite)*. 
 
