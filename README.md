@@ -1,4 +1,4 @@
-### Research <img src="https://copy.com/AOdYmIdzylnhrnHQ" style="width:28px;" /> 
+### Research
 
 I spent a while testing what happens when using the calculator in different ways.
 
@@ -41,8 +41,8 @@ My biggest design challenge was the font**(s)**. Yes, that is plural. Apple uses
 
 I wanted to have a nerdy throwback. So I based the icon on [1337](http://en.wikipedia.org/wiki/Leet). When you put 1337 in a calculator and turn it upside down it spells LEET *(aka Elite)*. 
 
-<img src="https://copy.com/3uocbVZ2NJfSCt0F" style="width:80px; border-radius:16px; border: 1px solid #eee;" />
+![App Icon](https://copy.com/YWvlI1fvhtiljvia)
 
 Here are the screenshots of the calculator app that I built.
 
-<img src="https://copy.com/frVfMUp9ZYRO0Mqe" style="width:30%;" /> <img src="https://copy.com/YZGzBRabcUVw0VtV" style="width:30%;" /> <img src="https://copy.com/9umDSVCqU9I7wfxg" style="width:30%;" />
+![Launch Screen](https://copy.com/9FfZjM4ukOLslBxs) ![Screen Shot](https://copy.com/EhLCPAs8VaQiPFjb) ![Screen Shot](https://copy.com/4pJ0LgoB8KE91TRY)
