@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A91C9FFD194630FE006AD682 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91C9FFC194630FE006AD682 /* Crashlytics.framework */; };
 		A97F7429188838F600A03ACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97F7428188838F600A03ACC /* Foundation.framework */; };
 		A97F742B188838F600A03ACC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97F742A188838F600A03ACC /* CoreGraphics.framework */; };
 		A97F742D188838F600A03ACC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97F742C188838F600A03ACC /* UIKit.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A91C9FFC194630FE006AD682 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		A97F7425188838F600A03ACC /* Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97F7428188838F600A03ACC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A97F742A188838F600A03ACC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,6 +75,7 @@
 			files = (
 				A97F742B188838F600A03ACC /* CoreGraphics.framework in Frameworks */,
 				A97F742D188838F600A03ACC /* UIKit.framework in Frameworks */,
+				A91C9FFD194630FE006AD682 /* Crashlytics.framework in Frameworks */,
 				A97F7429188838F600A03ACC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +118,7 @@
 		A97F7427188838F600A03ACC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A91C9FFC194630FE006AD682 /* Crashlytics.framework */,
 				A97F7428188838F600A03ACC /* Foundation.framework */,
 				A97F742A188838F600A03ACC /* CoreGraphics.framework */,
 				A97F742C188838F600A03ACC /* UIKit.framework */,
@@ -211,6 +215,7 @@
 				A97F7421188838F600A03ACC /* Sources */,
 				A97F7422188838F600A03ACC /* Frameworks */,
 				A97F7423188838F600A03ACC /* Resources */,
+				A91C9FFB194630EF006AD682 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -299,6 +304,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A91C9FFB194630EF006AD682 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run a26d0a2d3d3631b380d39fead4eadf0728fb51e9 50dae8c2478540a513f641a395695231a0cbfd44576e7da942b567b4ee4b497f";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A97F7421188838F600A03ACC /* Sources */ = {
@@ -427,13 +448,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Joseph Albright (965FHW76SM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Joseph Albright (965FHW76SM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jo Albright (3Y8N8YSYR7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jo Albright (3Y8N8YSYR7)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calc/Calc-Prefix.pch";
 				INFOPLIST_FILE = "Calc/Calc-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "A8B97668-A082-48D4-826C-70B6A3323C6F";
+				PROVISIONING_PROFILE = "9BDD31FE-D9BE-4090-B013-88707BDA1648";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -443,13 +468,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Joseph Albright (965FHW76SM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Joseph Albright (965FHW76SM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jo Albright (3Y8N8YSYR7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jo Albright (3Y8N8YSYR7)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calc/Calc-Prefix.pch";
 				INFOPLIST_FILE = "Calc/Calc-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "A8B97668-A082-48D4-826C-70B6A3323C6F";
+				PROVISIONING_PROFILE = "9BDD31FE-D9BE-4090-B013-88707BDA1648";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

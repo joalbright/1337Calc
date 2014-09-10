@@ -51,8 +51,8 @@ typedef enum mathematics {
     mathematics last_math;
     mathematics selected;
     
-    float current_value;
-    float current_operation_value;
+    double current_value;
+    double current_operation_value;
     
     UIButton *tapped;
     UIButton *clear_button;
@@ -268,7 +268,7 @@ typedef enum mathematics {
 
 - (NSString *)doMathWith:(enum mathematics)m
 {
-    float num;
+    double num;
     
     switch((int)m)
     {
@@ -416,7 +416,7 @@ typedef enum mathematics {
     
     if([self tooLong]) return;
     
-    float num = [nocommas floatValue];
+    double num = [nocommas floatValue];
     
     NSString *whole;
     
@@ -428,7 +428,7 @@ typedef enum mathematics {
         
     } else {
         
-        float value = [nocommas floatValue];
+        double value = [nocommas floatValue];
         
         whole = [NSString stringWithFormat:@"%g",value];
     }
@@ -456,7 +456,7 @@ typedef enum mathematics {
     
     NSString *nocommas = [[number_display text] stringByReplacingOccurrencesOfString:@"," withString:@""];
     
-    float num = [nocommas floatValue];
+    double num = [nocommas floatValue];
     if(num - (int)num != 0) return;
     
     if(num == 0)
@@ -482,7 +482,7 @@ typedef enum mathematics {
     
     NSString *nocommas = [[number_display text] stringByReplacingOccurrencesOfString:@"," withString:@""];
     
-    float percent = [nocommas floatValue] / 100;
+    double percent = [nocommas floatValue] / 100;
     
     NSString *formatted = [self formatCommasWithString:[NSString stringWithFormat:@"%g",percent]];
     
@@ -495,7 +495,7 @@ typedef enum mathematics {
     
     NSString *nocommas = [[number_display text] stringByReplacingOccurrencesOfString:@"," withString:@""];
     
-    float number = [nocommas floatValue] * -1;
+    double number = [nocommas floatValue] * -1;
     
     NSString *formatted = [self formatCommasWithString:[NSString stringWithFormat:@"%g",number]];
     
